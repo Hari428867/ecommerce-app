@@ -1,5 +1,6 @@
 import React from "react";
 import ProductCard from "../components/ProductCard";
+import { useNavigate } from "react-router-dom";
 
 const products = [
   {
@@ -29,6 +30,8 @@ const products = [
 ];
 
 function ProductList() {
+  const navigate = useNavigate(); // Hook for navigation
+
   return (
     <div className="p-10">
       <h2 className="text-3xl font-bold text-center mb-6">Products</h2>
@@ -36,6 +39,15 @@ function ProductList() {
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
+      </div>
+      {/* New Button Added */}
+      <div className="text-center mt-8">
+        <button
+          onClick={() => navigate("/shop")}
+          className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300"
+        >
+          Explore More Deals
+        </button>
       </div>
     </div>
   );

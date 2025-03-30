@@ -23,8 +23,6 @@ function Mobiles() {
             Buy on Amazon
           </a>
         </div>
-<<<<<<< HEAD
-=======
         <div className="p-4 border rounded-lg shadow-md text-center">
           <img 
              src="/images/Samsung Galaxy M35 5G.png"
@@ -42,7 +40,6 @@ function Mobiles() {
             Buy on Amazon
           </a>
         </div>
->>>>>>> master
       </div>
     </div>
   );

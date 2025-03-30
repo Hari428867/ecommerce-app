@@ -23,6 +23,26 @@ function Mobiles() {
             Buy on Amazon
           </a>
         </div>
+<<<<<<< HEAD
+=======
+        <div className="p-4 border rounded-lg shadow-md text-center">
+          <img 
+             src="/images/Samsung Galaxy M35 5G.png"
+             alt="Smartphone XYZ"
+             className="w-60 h-80 object-cover"
+          />
+          <h3 className="mt-2 font-semibold text-lg">Samsung Galaxy M35 5G (Thunder Grey,6GB RAM,128GB Storage)| Corning Gorilla Glass Victus+| AnTuTu Score 595K+ | Vapour Cooling Chamber | 6000mAh Battery | 120Hz Super AMOLED Display</h3>
+          <p className="text-gray-600">₹13,999</p>
+          <a
+            href="https://amzn.to/3FYfhio"  // ✅ Your Amazon affiliate link
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          >
+            Buy on Amazon
+          </a>
+        </div>
+>>>>>>> master
       </div>
     </div>
   );

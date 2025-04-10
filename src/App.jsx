@@ -32,7 +32,7 @@ const Home = () => {
       {/* Hero Section */}
       <div
         className="relative h-screen flex flex-col items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/hero-image.jpg')" }}
+        style={{ backgroundImage: "url('/images/Screenshot_2025-04-10-14-49-57-22_680d03679600f7af0b4c700c6b270fe7~2.jpg ')" }}
       >
         <div className="text-center bg-white bg-opacity-70 p-10 rounded-lg shadow-lg">
           <h2 className="text-4xl font-bold text-gray-900">

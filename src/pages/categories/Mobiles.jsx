@@ -5,37 +5,52 @@ function Mobiles() {
     <div className="p-6">
       <h2 className="text-3xl font-bold text-center mb-6">Mobile Deals</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        
         {/* Mobile Deal 1 */}
-        <div className="p-4 border rounded-lg shadow-md text-center">
+        <div className="p-4 border rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
           <img
-            src="/images/IQOO Z9X 5G.jpg"  // ✅ Replace with real mobile image
-            alt="Smartphone XYZ"
-            className="w-60 h-80 object-cover"
+            src="/images/IQOO Z9X 5G.jpg"
+            alt="iQOO Z9x 5G"
+            className="w-60 h-80 object-cover mx-auto"
           />
-          <h3 className="mt-2 font-semibold text-lg">iQOO Z9x 5G (Tornado Green, 6GB RAM, 128GB Storage) | Snapdragon 6 Gen 1 with 560k+ AnTuTu Score | 6000mAh Battery with 7.99mm Slim Design | 44W FlashCharge</h3>
-          <p className="text-gray-600">₹13,499</p>
+          <h3 className="mt-2 font-semibold text-lg">
+            iQOO Z9x 5G (Tornado Green, 6GB RAM, 128GB Storage) | Snapdragon 6 Gen 1 with 560k+ AnTuTu Score | 6000mAh Battery with 7.99mm Slim Design | 44W FlashCharge
+          </h3>
+          
+          {/* Price Styled */}
+          <p className="text-red-600 font-bold text-xl mt-2">₹13,499</p>
+
+          {/* Button Styled */}
           <a
-            href="https://amzn.to/3CNgBUa"  // ✅ Your Amazon affiliate link
+            href="https://amzn.to/3CNgBUa"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-3 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+            className="mt-3 inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-2 rounded-full shadow-md transition-transform transform hover:scale-105"
           >
             Buy on Amazon
           </a>
         </div>
-        <div className="p-4 border rounded-lg shadow-md text-center">
-          <img 
-             src="/images/Samsung Galaxy M35 5G.png"
-             alt="Smartphone XYZ"
-             className="w-60 h-80 object-cover"
+
+        {/* Mobile Deal 2 */}
+        <div className="p-4 border rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
+          <img
+            src="/images/Samsung Galaxy M35 5G.png"
+            alt="Samsung Galaxy M35 5G"
+            className="w-60 h-80 object-cover mx-auto"
           />
-          <h3 className="mt-2 font-semibold text-lg">Samsung Galaxy M35 5G (Thunder Grey,6GB RAM,128GB Storage)| Corning Gorilla Glass Victus+| AnTuTu Score 595K+ | Vapour Cooling Chamber | 6000mAh Battery | 120Hz Super AMOLED Display</h3>
-          <p className="text-gray-600">₹13,999</p>
+          <h3 className="mt-2 font-semibold text-lg">
+            Samsung Galaxy M35 5G (Thunder Grey,6GB RAM,128GB Storage)| Corning Gorilla Glass Victus+| AnTuTu Score 595K+ | Vapour Cooling Chamber | 6000mAh Battery | 120Hz Super AMOLED Display
+          </h3>
+          
+          {/* Price Styled */}
+          <p className="text-red-600 font-bold text-xl mt-2">₹13,999</p>
+
+          {/* Button Styled */}
           <a
-            href="https://amzn.to/3FYfhio"  // ✅ Your Amazon affiliate link
+            href="https://amzn.to/3FYfhio"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-3 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+            className="mt-3 inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-2 rounded-full shadow-md transition-transform transform hover:scale-105"
           >
             Buy on Amazon
           </a>

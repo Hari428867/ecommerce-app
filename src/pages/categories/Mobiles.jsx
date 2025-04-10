@@ -18,7 +18,10 @@ function Mobiles() {
           </h3>
           
           {/* Price Styled */}
-          <p className="text-red-600 font-bold text-xl mt-2">₹13,499</p>
+          <div className="mt-2 space-x-2">
+            <span className="text-red-600 font-bold text-xl">₹13,499</span>
+            <span className="text-gray-500 line-through text-lg">₹18,999</span>
+          </div>
 
           {/* Button Styled */}
           <a
@@ -43,7 +46,10 @@ function Mobiles() {
           </h3>
           
           {/* Price Styled */}
-          <p className="text-red-600 font-bold text-xl mt-2">₹13,999</p>
+          <div className="mt-2 space-x-2">
+            <span className="text-red-600 font-bold text-xl">₹13,999</span>
+            <span className="text-gray-500 line-through text-lg">₹24,499</span>
+          </div>
 
           {/* Button Styled */}
           <a

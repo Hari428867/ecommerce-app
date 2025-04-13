@@ -15,7 +15,7 @@ function Appliances() {
             -29%
           </span>
           <img
-            src="https://m.media-amazon.com/images/I/71K9jHcK5-L._SL1500_.jpg" // Replace with your appliance image URL
+            src="public/images/refridgerator.png" // Replace with your appliance image URL
             alt="Washing Machine"
             className="w-full h-52 object-contain mb-4"
           />

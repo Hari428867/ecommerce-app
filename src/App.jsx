@@ -52,11 +52,6 @@ const Home = () => {
           </button>
         </div>
       </div>
-
-      {/* Product Listings */}
-      <div id="products">
-        <ProductList />
-      </div>
     </div>
   );
 };

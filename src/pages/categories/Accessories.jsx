@@ -11,9 +11,6 @@ function Accessories() {
       {/* Subcategory Buttons */}
       <div className="flex flex-wrap justify-center gap-4">
         <button className="px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
-          Mobile Accessories
-        </button>
-        <button className="px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
           Laptops
         </button>
         <button className="px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">

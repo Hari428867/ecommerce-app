@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { FaArrowDown } from "react-icons/fa"; // ✅ Import Arrow Icon
 import Navbar from "./components/Navbar";
-import ProductList from "./pages/ProductList";
+import DealOfTheDay from "./pages/DealOfTheDay";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Shop from "./pages/Shop";

@@ -1,4 +1,5 @@
 import React from "react";
+import Laptops from "./Laptops";
 
 function Accessories() {
   return (

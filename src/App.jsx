@@ -52,6 +52,10 @@ const Home = () => {
           </button>
         </div>
       </div>
+      {/* ✅ Deal of the Day Section */}
+      <div id="products" className="mt-10 px-4">
+        <DealOfTheDay />
+      </div>
     </div>
   );
 };

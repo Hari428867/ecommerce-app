@@ -14,17 +14,17 @@ function HomeItems() {
           <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
             -50%
           </span>
-          <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
-            Great Summer Sale
-          </span>
           <img
-            src="public/images/acer32inchtv.png"
+            src="/images/acer32inchtv.png"
             alt="Acer smart tv"
             className="w-full h-52 object-contain mb-4"
           />
           <h3 className="font-semibold text-lg mb-2">
             Acer 80 cm (32 inches) V Pro Series HD Ready Smart QLED Google TV with Android 14 (Black) | 16GB Storage | 30W Dolby Audio
           </h3>
+          <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
+            Great Summer Sale
+          </span>
           <div className="text-red-600 font-bold text-lg">
             ₹12,499{" "}
             <span className="line-through text-gray-500 text-sm">₹24,999</span>
@@ -44,17 +44,17 @@ function HomeItems() {
           <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
             -56%
           </span>
-          <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
-            Great Summer Sale
-          </span>
           <img
-            src="public/images/redmi32inchtv.png"
-            alt="Triple Door Refrigerator"
+            src="/images/redmi32inchtv.png"
+            alt="redmi32inchtv"
             className="w-full h-52 object-contain mb-4"
           />
           <h3 className="font-semibold text-lg mb-2">
             Redmi Xiaomi 80 cm (32 inches) F Series HD Ready Smart LED Fire TV L32MA-FVIN (Black)
           </h3>
+          <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
+            Great Summer Sale
+          </span>
           <div className="text-red-600 font-bold text-lg">
             ₹10,999{" "}
             <span className="line-through text-gray-500 text-sm">₹24,999</span>

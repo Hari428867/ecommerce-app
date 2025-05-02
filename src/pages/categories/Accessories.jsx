@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Laptops from "../categories/Laptops"; // ✅ Corrected path (no dot before "src")
+import Laptops from "../categories/Laptops";
+import SmartWatches from "../categories/SmartWatches";
 
 function Accessories() {
   const [selectedAccessory, setSelectedAccessory] = useState("");
@@ -12,29 +13,43 @@ function Accessories() {
       </p>
 
       {/* Subcategory Buttons */}
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="flex flex-wrap justify-center gap-4 mb-6">
         <button
           className="px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
           onClick={() => setSelectedAccessory("laptops")}
         >
           Laptops
         </button>
-        <button className="px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+        <button
+          className="px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+          onClick={() => setSelectedAccessory("smartwatches")}
+        >
           Smartwatches
         </button>
-        <button className="px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+        <button
+          className="px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+          onClick={() => setSelectedAccessory("audio")}
+        >
           Audio Devices
         </button>
-        <button className="px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+        <button
+          className="px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+          onClick={() => setSelectedAccessory("gaming")}
+        >
           Gaming Accessories
         </button>
-        <button className="px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+        <button
+          className="px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+          onClick={() => setSelectedAccessory("others")}
+        >
           Others
         </button>
       </div>
 
-      {/* Render Laptops Component */}
+      {/* Conditional Rendering */}
       {selectedAccessory === "laptops" && <Laptops />}
+      {selectedAccessory === "smartwatches" && <SmartWatches />}
+      {/* Add similar conditional blocks for other accessories when ready */}
     </div>
   );
 }

@@ -32,6 +32,30 @@ function Appliances() {
             Buy on Amazon
           </a>
         </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {/* Appliance Card */}
+        <div className="border rounded-lg p-4 shadow-md relative">
+          <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
+            -24%
+          </span>
+          <img
+            src="/images/tripledoor.png" // Replace with your appliance image URL
+            alt="Washing Machine"
+            className="w-full h-52 object-contain mb-4"
+          />
+          <h3 className="font-semibold text-lg mb-2">
+            Whirlpool 235 L Frost Free Triple-Door Refrigerator (FP 253D PROTTON ROY RADIANT STEEL(Z) Double Door Refrigerator space)
+          </h3>
+          <div className="text-red-600 font-bold text-lg">₹25,990 <span className="line-through text-gray-500 text-sm">₹34,190</span></div>
+          <a
+            href="https://amzn.to/42SYkxK" // Replace with your affiliate link
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-3 px-4 py-2 bg-yellow-400 text-black rounded font-semibold hover:bg-yellow-300"
+          >
+            Buy on Amazon
+          </a>
+        </div>
       </div>
     </div>
   );

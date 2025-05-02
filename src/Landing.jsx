@@ -10,7 +10,7 @@ const Landing = () => {
       </p>
       <div className="flex gap-6">
         <a
-          href="/home"
+          href="./App.jsx"
           className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
         >
           Try MiniKart to explore best deals

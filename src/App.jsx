@@ -6,7 +6,7 @@ import DealOfTheDay from "./pages/DealOfTheDay";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Shop from "./pages/Shop";
-import Landing from "./src/Landing";
+import Landing from "./Landing";
 
 function App() {
   return (

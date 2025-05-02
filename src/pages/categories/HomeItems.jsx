@@ -18,7 +18,7 @@ function HomeItems() {
             Great Summer Sale
           </span>
           <img
-            src="/images/refridgerator.png"
+            src="public/images/acer32inchtv.png"
             alt="Acer smart tv"
             className="w-full h-52 object-contain mb-4"
           />
@@ -48,7 +48,7 @@ function HomeItems() {
             Great Summer Sale
           </span>
           <img
-            src="/images/tripledoor.png"
+            src="public/images/redmi32inchtv.png"
             alt="Triple Door Refrigerator"
             className="w-full h-52 object-contain mb-4"
           />

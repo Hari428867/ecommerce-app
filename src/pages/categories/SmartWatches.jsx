@@ -10,7 +10,7 @@ function SmartWatches() {
         {/* smartwatch Accessory 1 */}
         <div className="p-4 border rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
           <img
-            src="/images/hp13thgen"
+            src="/images/firebolt.png"
             alt="firebolt smartwatch"
             className="w-full h-48 object-cover mb-2"
           />

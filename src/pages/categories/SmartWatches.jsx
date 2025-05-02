@@ -37,7 +37,7 @@ function SmartWatches() {
         {/* Smartwatch Accessory 2 (Dummy Deal) */}
         <div className="p-4 border rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
           <img
-            src="/images/dummy-smartwatch.jpg"  // Replace with real image if available
+            src="/images/Amazfitwatch.png"  // Replace with real image if available
             alt="Amazfitwatch"
             className="w-full h-48 object-cover mb-2"
           />

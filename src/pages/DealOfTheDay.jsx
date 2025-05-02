@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from "react";
 
 const ALL_PRODUCTS = [
-  { id: 1, name: "iPhone 14 Pro", price: "₹1,20,000", image: "/images/iphone.jpg" },
-  { id: 2, name: "Samsung Galaxy S23", price: "₹85,000", image: "/images/samsung.jpg" },
-  { id: 3, name: "OnePlus Nord CE 3", price: "₹24,999", image: "/images/oneplus.jpg" },
-  // Add more dummy affiliate products
+  {
+    id: 1,
+    name: "Amazfit Active 42mm AMOLED Smart Watch, Built in GPS, 14day Battery, 5ATM Water Resistant, for iOS & Android, Accurate Readings, BT Calls, Strava Support, Temperature Sensor, VO2 Max (Midnight Black)",
+    price: "₹6,999",
+    originalPrice: "₹19,999",
+    discount: "-65%",
+    image: "/images/Amazfitwatch.png",
+    link: "https://amzn.to/42SFWFi",
+    badge: "Top Trending",
+  }
 ];
 
 const ONE_DAY_MS = 24 * 60 * 60 * 1000;
@@ -13,17 +19,17 @@ function DealOfTheDay() {
   const [deals, setDeals] = useState([]);
   const [countdown, setCountdown] = useState("");
 
-  // Generate or fetch today's deal
+  // Load or generate deals for today
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem("deals")) || {};
     const now = new Date();
 
     if (!saved.startTime || new Date(saved.startTime).toDateString() !== now.toDateString()) {
-      // New day: Pick random 2-3 products
       const selectedDeals = ALL_PRODUCTS.sort(() => 0.5 - Math.random()).slice(0, 3);
-      const startTime = new Date().toISOString();
-
-      const newDeals = { startTime, items: selectedDeals };
+      const newDeals = {
+        startTime: new Date().toISOString(),
+        items: selectedDeals,
+      };
       localStorage.setItem("deals", JSON.stringify(newDeals));
       setDeals(selectedDeals);
     } else {
@@ -31,7 +37,7 @@ function DealOfTheDay() {
     }
   }, []);
 
-  // Timer logic
+  // Countdown logic
   useEffect(() => {
     const interval = setInterval(() => {
       const saved = JSON.parse(localStorage.getItem("deals"));
@@ -52,16 +58,35 @@ function DealOfTheDay() {
   }, []);
 
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">🔥 Deal of the Day</h1>
-      <p className="text-gray-600 mb-4">⏳ Time left: <strong>{countdown}</strong></p>
+    <div className="p-6">
+      <h1 className="text-3xl font-bold mb-4 text-center text-yellow-600">🔥 Deal of the Day</h1>
+      <p className="text-center text-gray-600 mb-6">⏳ Time left: <strong>{countdown}</strong></p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {deals.map((product) => (
-          <div key={product.id} className="p-4 border rounded-lg shadow">
-            <img src={product.image} alt={product.name} className="h-40 w-full object-cover mb-2" />
-            <h2 className="font-semibold">{product.name}</h2>
-            <p className="text-green-600 font-bold">{product.price}</p>
+          <div key={product.id} className="p-4 border rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+            <img
+              src={product.image}
+              alt={product.name}
+              className="w-full h-48 object-cover mb-2"
+            />
+            <h3 className="font-semibold text-lg">{product.name}</h3>
+            <p className="text-red-600 font-bold text-xl mt-1">{product.price}</p>
+            <p className="text-gray-500 line-through text-sm">{product.originalPrice}</p>
+            <span className="inline-block bg-red-500 text-white text-xs px-2 py-1 rounded-full mt-1 mr-2">
+              {product.discount}
+            </span>
+            <span className="inline-block bg-green-500 text-white text-xs px-2 py-1 rounded-full mt-1">
+              {product.badge}
+            </span>
+            <a
+              href={product.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-4 py-2 rounded-full transition-transform hover:scale-105"
+            >
+              Buy on Amazon
+            </a>
           </div>
         ))}
       </div>

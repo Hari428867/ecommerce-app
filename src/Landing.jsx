@@ -1,5 +1,6 @@
 // src/Landing.jsx
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const Landing = () => {
   return (
@@ -9,14 +10,14 @@ const Landing = () => {
         Your one-stop affiliate shopping destination
       </p>
       <div className="flex gap-6">
-        <a
-          href="./App.jsx"
-          className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+        <Link
+           to="/home"
+           className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
         >
-          Try MiniKart to explore best deals
-        </a>
+         Try MiniKart
+        </Link>
         <a
-          href="https://median.co/share/wzelqp#apk" // Replace with real link
+          href="https://median.co/share/wzelqp#apk" 
           className="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition"
           download
         >

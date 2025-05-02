@@ -10,17 +10,17 @@ const Landing = () => {
       </p>
       <div className="flex gap-6">
         <a
-          href="/app"
+          href="/home"
           className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
         >
-          Try MiniKart
+          Try MiniKart to explore best deals
         </a>
         <a
-          href="https://your-median-download-link.com" // Replace with real link
+          href="https://median.co/share/wzelqp#apk" // Replace with real link
           className="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition"
           download
         >
-          Download App
+          Download App for Android
         </a>
       </div>
     </div>

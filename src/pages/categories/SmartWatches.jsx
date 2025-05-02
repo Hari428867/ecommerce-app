@@ -35,4 +35,4 @@ function SmartWatches() {
   );
 }
 
-export default Laptops;
+export default SmartWatches;

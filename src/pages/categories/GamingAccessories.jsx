@@ -15,7 +15,7 @@ function GamingAccessories() {
             -85%
           </span>
           <img
-            src="/images/game.png"
+            src="/images/striffgamingpad.png"
             alt="Gaming mouse pad"
             className="w-full h-52 object-contain mb-4"
           />
@@ -45,7 +45,7 @@ function GamingAccessories() {
             -56%
           </span>
           <img
-            src="/images/laptopcooler.png"
+            src="/images/zebronicslaptopcooler.png"
             alt="Laptop cooler"
             className="w-full h-52 object-contain mb-4"
           />
@@ -74,7 +74,7 @@ function GamingAccessories() {
             -82%
           </span>
           <img
-            src="/images/coolingpad.png"
+            src="/images/zebronicslaptopcooler.png"
             alt="Laptop cooling pad"
             className="w-full h-52 object-contain mb-4"
           />

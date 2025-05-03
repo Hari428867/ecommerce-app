@@ -11,25 +11,37 @@ const ALL_PRODUCTS = [
     link: "https://amzn.to/4jZuA9h",
     badge: "Top Trending",
   },
-  // Add more products here as needed
+  // Add more products as needed
 ];
 
 function DealOfTheDay() {
   const [deals, setDeals] = useState([]);
   const [countdown, setCountdown] = useState("");
 
-  // Set today's deals (same for everyone)
-  useEffect(() => {
-    const selectedDeals = ALL_PRODUCTS.slice(0, 3); // Pick top 3 (you can make it dynamic too)
+  const generateNewDeals = () => {
+    const selectedDeals = ALL_PRODUCTS.slice(0, 3); // You can add random logic if needed
     setDeals(selectedDeals);
+  };
+
+  // Set deals on initial mount
+  useEffect(() => {
+    generateNewDeals();
   }, []);
 
-  // Countdown to midnight UTC
+  // Countdown logic to local midnight with auto-refresh
   useEffect(() => {
     const updateCountdown = () => {
       const now = new Date();
-      const midnightUTC = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1));
-      const diff = Math.max(midnightUTC.getTime() - now.getTime(), 0);
+
+      const midnightLocal = new Date(now);
+      midnightLocal.setHours(24, 0, 0, 0); // Sets to next local midnight
+
+      const diff = Math.max(midnightLocal.getTime() - now.getTime(), 0);
+
+      // Auto-refresh deals at exactly midnight
+      if (diff === 0) {
+        generateNewDeals();
+      }
 
       const hours = String(Math.floor(diff / (1000 * 60 * 60))).padStart(2, "0");
       const minutes = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, "0");
@@ -38,7 +50,7 @@ function DealOfTheDay() {
       setCountdown(`${hours}:${minutes}:${seconds}`);
     };
 
-    updateCountdown(); // Initial call
+    updateCountdown(); // Run immediately
     const interval = setInterval(updateCountdown, 1000);
 
     return () => clearInterval(interval);
@@ -47,7 +59,9 @@ function DealOfTheDay() {
   return (
     <div className="p-6">
       <h1 className="text-3xl font-bold mb-4 text-center text-yellow-600">🔥 Deal of the Day</h1>
-      <p className="text-center text-gray-600 mb-6">⏳ Time left: <strong>{countdown}</strong></p>
+      <p className="text-center text-gray-600 mb-6">
+        ⏳ Time left: <strong>{countdown}</strong>
+      </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {deals.map((product) => (

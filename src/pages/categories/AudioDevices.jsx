@@ -42,7 +42,7 @@ function AudioDevices() {
             -80%
           </span>
           <img
-            src="/images/tripledoor.png"
+            src="/images/mivisuperpods.png"
             alt="Mivi Superpods Halo"
             className="w-full h-52 object-contain mb-4"
           />

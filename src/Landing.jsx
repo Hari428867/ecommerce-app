@@ -7,7 +7,8 @@ const Landing = () => {
 
       {/* 🚨 Top Notice Banner */}
       <div className="bg-yellow-200 text-yellow-800 text-sm font-medium py-2 px-4 w-full shadow-md">
-        ⚠️ Please note: The app has some update errors. Kindly visit our website for more details.
+        ⚠️ Please note: If product updates are not appearing, kindly clear the app's cache and data on your phone. The app currently has some update issues. For the latest deals, please visit our website.
+
       </div>
 
       {/* Main Content */}
@@ -24,11 +25,14 @@ const Landing = () => {
             Try MiniKart
           </Link>
           <a 
-            href="https://minikart-ecommerce.netlify.app"
-            className="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition"
+             href="https://minikart-ecommerce.netlify.app"
+             target="_blank" 
+             rel="noopener noreferrer"
+             className="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition"
           >
             Visit Website
           </a>
+
           <a
             href="https://median.co/share/wzelqp#apk" 
             className="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition"

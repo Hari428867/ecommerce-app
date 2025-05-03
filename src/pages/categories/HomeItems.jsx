@@ -74,7 +74,7 @@ function HomeItems() {
             -61%
           </span>
           <img
-            src="/images/redmi32inchtv.png"
+            src="/images/vmsmarttv.png"
             alt="VW43inchtv"
             className="w-full h-52 object-contain mb-4"
           />

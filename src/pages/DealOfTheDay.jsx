@@ -3,56 +3,43 @@ import React, { useEffect, useState } from "react";
 const ALL_PRODUCTS = [
   {
     id: 1,
-    name: "Amazfit Active 42mm AMOLED Smart Watch, Built in GPS, 14day Battery, 5ATM Water Resistant, for iOS & Android, Accurate Readings, BT Calls, Strava Support, Temperature Sensor, VO2 Max (Midnight Black)",
-    price: "₹6,999",
-    originalPrice: "₹19,999",
-    discount: "-65%",
-    image: "/images/Amazfitwatch.png",
-    link: "https://amzn.to/42SFWFi",
+    name: "Samsung 80 cm (32 inches) HD Ready Smart LED TV Dolby Digital Audio (Glossy Black)",
+    price: "₹11,990",
+    originalPrice: "₹18,900",
+    discount: "-37%",
+    image: "/images/samsungsmarttv.png",
+    link: "https://amzn.to/4jZuA9h",
     badge: "Top Trending",
-  }
+  },
+  // Add more products here as needed
 ];
-
-const ONE_DAY_MS = 24 * 60 * 60 * 1000;
 
 function DealOfTheDay() {
   const [deals, setDeals] = useState([]);
   const [countdown, setCountdown] = useState("");
 
-  // Load or generate deals for today
+  // Set today's deals (same for everyone)
   useEffect(() => {
-    const saved = JSON.parse(localStorage.getItem("deals")) || {};
-    const now = new Date();
-
-    if (!saved.startTime || new Date(saved.startTime).toDateString() !== now.toDateString()) {
-      const selectedDeals = ALL_PRODUCTS.sort(() => 0.5 - Math.random()).slice(0, 3);
-      const newDeals = {
-        startTime: new Date().toISOString(),
-        items: selectedDeals,
-      };
-      localStorage.setItem("deals", JSON.stringify(newDeals));
-      setDeals(selectedDeals);
-    } else {
-      setDeals(saved.items);
-    }
+    const selectedDeals = ALL_PRODUCTS.slice(0, 3); // Pick top 3 (you can make it dynamic too)
+    setDeals(selectedDeals);
   }, []);
 
-  // Countdown logic
+  // Countdown to midnight UTC
   useEffect(() => {
-    const interval = setInterval(() => {
-      const saved = JSON.parse(localStorage.getItem("deals"));
-      if (saved?.startTime) {
-        const end = new Date(saved.startTime).getTime() + ONE_DAY_MS;
-        const now = Date.now();
-        const diff = Math.max(end - now, 0);
+    const updateCountdown = () => {
+      const now = new Date();
+      const midnightUTC = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1));
+      const diff = Math.max(midnightUTC.getTime() - now.getTime(), 0);
 
-        const hours = String(Math.floor(diff / (1000 * 60 * 60))).padStart(2, "0");
-        const minutes = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, "0");
-        const seconds = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, "0");
+      const hours = String(Math.floor(diff / (1000 * 60 * 60))).padStart(2, "0");
+      const minutes = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, "0");
+      const seconds = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, "0");
 
-        setCountdown(`${hours}:${minutes}:${seconds}`);
-      }
-    }, 1000);
+      setCountdown(`${hours}:${minutes}:${seconds}`);
+    };
+
+    updateCountdown(); // Initial call
+    const interval = setInterval(updateCountdown, 1000);
 
     return () => clearInterval(interval);
   }, []);

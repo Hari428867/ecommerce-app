@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Laptops from "../categories/Laptops";
 import SmartWatches from "../categories/SmartWatches";
 import AudioDevices from "../categories/AudioDevices";
+import GamingAccessories from "../categories/GamingAccessories";
 
 function Accessories() {
   const [selectedAccessory, setSelectedAccessory] = useState("");
@@ -45,6 +46,7 @@ function Accessories() {
       {selectedAccessory === "laptops" && <Laptops />}
       {selectedAccessory === "smartwatches" && <SmartWatches />}
       {selectedAccessory === "audio" && <AudioDevices />}
+      {selectedAccessory === "gaming" && <GamingAccessories />}
       {/* Add similar conditional blocks for other accessories when ready */}
     </div>
   );

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Laptops from "../categories/Laptops";
 import SmartWatches from "../categories/SmartWatches";
+import AudioDevices from "../categories/AudioDevices";
 
 function Accessories() {
   const [selectedAccessory, setSelectedAccessory] = useState("");
@@ -38,17 +39,12 @@ function Accessories() {
         >
           Gaming Accessories
         </button>
-        <button
-          className="px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
-          onClick={() => setSelectedAccessory("others")}
-        >
-          Others
-        </button>
       </div>
 
       {/* Conditional Rendering */}
       {selectedAccessory === "laptops" && <Laptops />}
       {selectedAccessory === "smartwatches" && <SmartWatches />}
+      {selectedAccessory === "audio" && <AudioDevices />}
       {/* Add similar conditional blocks for other accessories when ready */}
     </div>
   );

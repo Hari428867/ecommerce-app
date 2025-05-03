@@ -68,6 +68,35 @@ function HomeItems() {
             Buy on Amazon
           </a>
         </div>
+        {/* Appliance Card 3 */}
+        <div className="border rounded-lg p-4 shadow-md relative">
+          <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
+            -61%
+          </span>
+          <img
+            src="/images/redmi32inchtv.png"
+            alt="VW43inchtv"
+            className="w-full h-52 object-contain mb-4"
+          />
+          <h3 className="font-semibold text-lg mb-2">
+            VW 109 cm (43 inches) Pro Series 4K Ultra HD Smart QLED Google TV VW43GQ1 (Black)
+          </h3>
+          <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
+            Great Summer Sale
+          </span>
+          <div className="text-red-600 font-bold text-lg">
+            ₹19,499{" "}
+            <span className="line-through text-gray-500 text-sm">₹49,999</span>
+          </div>
+          <a
+            href="https://amzn.to/43bL4FH"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-3 px-4 py-2 bg-yellow-400 text-black rounded font-semibold hover:bg-yellow-300"
+          >
+            Buy on Amazon
+          </a>
+        </div>
       </div>
     </div>
   );

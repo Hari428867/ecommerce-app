@@ -3,13 +3,13 @@ import React, { useEffect, useState } from "react";
 const ALL_PRODUCTS = [
   {
     id: 1,
-    name: "Samsung 80 cm (32 inches) HD Ready Smart LED TV Dolby Digital Audio (Glossy Black)",
-    price: "₹11,990",
-    originalPrice: "₹18,900",
-    discount: "-37%",
-    image: "/images/samsungsmarttv.png",
-    link: "https://amzn.to/4jZuA9h",
-    badge: "Top Trending",
+    name: "Native by UC Urban Company M1 Water Purifier | Needs No Service For 2 Years | RO+UV+Copper+Alkaline | 10-Stage Purifier | 4-in-1 Health Booster | 8L Capacity | 2 Year Warranty (Filters Included)",
+    price: "₹14,498",
+    originalPrice: "₹20,999",
+    discount: "-31%",
+    image: "/images/waterpurifier.png",
+    link: "https://amzn.to/4kPqeBW",
+    badge: "Limited Time Deal",
   },
   // Add more products as needed
 ];

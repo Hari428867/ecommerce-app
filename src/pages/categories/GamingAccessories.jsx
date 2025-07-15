@@ -12,7 +12,7 @@ function GamingAccessories() {
         {/* Appliance Card 1 */}
         <div className="border rounded-lg p-4 shadow-md relative">
           <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
-            -85%
+            -82%
           </span>
           <img
             src="/images/striffgamingpad.png"
@@ -23,10 +23,10 @@ function GamingAccessories() {
             STRIFF World Map Extended Size (800 mm x 300 mm x 2 mm) Gaming Mouse Pad| Desk Mat | Stitched Edges| Non-Slip Rubber Base|Computer Laptop|Keyboard Mouse Pad for Office & Home (World Map)
           </h3>
           <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
-            Great Summer Sale
+            Prime Day Sale
           </span>
           <div className="text-red-600 font-bold text-lg">
-            ₹199{" "}
+            ₹229{" "}
             <span className="line-through text-gray-500 text-sm">₹1,299</span>
           </div>
           <a
@@ -42,7 +42,7 @@ function GamingAccessories() {
         {/* Appliance Card 2 */}
         <div className="border rounded-lg p-4 shadow-md relative">
           <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
-            -56%
+            -38%
           </span>
           <img
             src="/images/zebronicslaptopcooler.png"
@@ -53,10 +53,10 @@ function GamingAccessories() {
             Zebronics NC5500D Powerful Laptop Cooler with Dual 125mm Fans, Silent Operation, Adjustable Fan Speed, Display, Controls, USB, 5 Step Retractable Stand and Mobile Holder
           </h3>
           <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
-            Great Summer Sale
+            Prime Day Sale
           </span>
           <div className="text-red-600 font-bold text-lg">
-            ₹699{" "}
+            ₹799{" "}
             <span className="line-through text-gray-500 text-sm">₹1,299</span>
           </div>
           <a
@@ -70,9 +70,9 @@ function GamingAccessories() {
         </div>
         {/* Appliance Card 3 */}
         <div className="border rounded-lg p-4 shadow-md relative">
-          <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
+          /*<span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
             -82%
-          </span>
+          </span>*/
           <img
             src="/images/zebronicslaptopcooler.png"
             alt="Laptop cooling pad"
@@ -82,12 +82,12 @@ function GamingAccessories() {
             Amazon Basics USB Powered Laptop Cooling Pad | Dual Fan | Dual USB Port | Blue LED Lights | 4 Adjustable Heights with Stand |
           </h3>
           <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
-            Great Summer Sale
+            Currently Unavailable
           </span>
-          <div className="text-red-600 font-bold text-lg">
+          /*<div className="text-red-600 font-bold text-lg">
             ₹399{" "}
             <span className="line-through text-gray-500 text-sm">₹2,179</span>
-          </div>
+          </div>*/
           <a
             href="https://amzn.to/4d0k3IA"
             target="_blank"

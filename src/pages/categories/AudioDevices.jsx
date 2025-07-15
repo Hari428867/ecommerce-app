@@ -12,7 +12,7 @@ function AudioDevices() {
         {/* Appliance Card 1 */}
         <div className="border rounded-lg p-4 shadow-md relative">
           <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
-            -84%
+            -85%
           </span>
           <img
             src="/images/boatearbuds.png"
@@ -23,7 +23,7 @@ function AudioDevices() {
             boAt Nirvana Ion ANC Pro, Hi-Res Audio LDAC,ANC(~32dB), 120Hrs Battery, App Support, Fast Charge, v5.3 Bluetooth TWS in Ear Earbuds Wireless Earphones with mic (Blazing Comet)
           </h3>
           <div className="text-red-600 font-bold text-lg">
-            ₹2,299{" "}
+            ₹2,099{" "}
             <span className="line-through text-gray-500 text-sm">₹13,990</span>
           </div>
           <a
@@ -39,7 +39,7 @@ function AudioDevices() {
         {/* Appliance Card 2 */}
         <div className="border rounded-lg p-4 shadow-md relative">
           <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
-            -80%
+            -78%
           </span>
           <img
             src="/images/mivisuperpods.png"
@@ -51,7 +51,7 @@ function AudioDevices() {
           </h3>
           <div className="text-red-600 font-bold text-lg">
             ₹1,499{" "}
-            <span className="line-through text-gray-500 text-sm">₹7,499</span>
+            <span className="line-through text-gray-500 text-sm">₹6,699</span>
           </div>
           <a
             href="https://amzn.to/4lZqHTy"

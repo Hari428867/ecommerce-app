@@ -20,10 +20,12 @@ function SmartWatches() {
           <h3 className="font-semibold text-lg">
             Fire-Boltt Ninja Call Pro Max Smart Watch 2.01 inch Display, Bluetooth Calling, 120+ Sports Modes, Health Suite, Voice Assistance (Black SS)
           </h3>
-          /*<p className="text-red-600 font-bold text-xl mt-1">₹1,099</p>*/
-          /*<p className="text-gray-500 line-through text-sm">₹16,999</p> */
-          /*<span className="inline-block bg-red-500 text-white text-xs px-2 py-1 rounded-full mt-1">-94%</span>*?
+          {/*
+          <p className="text-red-600 font-bold text-xl mt-1">₹1,099</p>
+          <p className="text-gray-500 line-through text-sm">₹16,999</p> 
+          <span className="inline-block bg-red-500 text-white text-xs px-2 py-1 rounded-full mt-1">-94%</span>
           <span className="inline-block bg-red-500 text-white text-xs px-2 py-1 rounded-full mt-1">Currently unavailable</span>
+          */}
           <a
             href="https://amzn.to/44DqU95"
             target="_blank"
@@ -44,10 +46,11 @@ function SmartWatches() {
           <h3 className="font-semibold text-lg">
             Amazfit Active 42mm AMOLED Smart Watch, Built in GPS, 14day Battery, 5ATM Water Resistant, for iOS & Android, Accurate Readings, BT Calls, Strava Support, Temperature Sensor, VO2 Max (Midnight Black)
           </h3>
-          //<p className="text-red-600 font-bold text-xl mt-1">₹7,499</p>
-          //<p className="text-gray-500 line-through text-sm">₹19,999</p>
-          //<span className="inline-block bg-red-500 text-white text-xs px-2 py-1 rounded-full mt-1">-63%</span>
+          <p className="text-red-600 font-bold text-xl mt-1">₹7,499</p>
+          <p className="text-gray-500 line-through text-sm">₹19,999</p>
+          <span className="inline-block bg-red-500 text-white text-xs px-2 py-1 rounded-full mt-1">-63%</span>
           <span className="inline-block bg-green-500 text-white text-xs px-2 py-1 rounded-full mt-1">Prime day sale</span>
+          
           <a
             href="https://amzn.to/432JQLW" // Replace with actual affiliate link
             target="_blank"

@@ -23,7 +23,7 @@ function HomeItems() {
             Acer 80 cm (32 inches) V Pro Series HD Ready Smart QLED Google TV with Android 14 (Black) | 16GB Storage | 30W Dolby Audio
           </h3>
           <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
-            Great Summer Sale
+            Prime day sale
           </span>
           <div className="text-red-600 font-bold text-lg">
             ₹12,499{" "}
@@ -42,7 +42,7 @@ function HomeItems() {
         {/* Appliance Card 2 */}
         <div className="border rounded-lg p-4 shadow-md relative">
           <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
-            -56%
+            -58%
           </span>
           <img
             src="/images/redmi32inchtv.png"
@@ -53,10 +53,10 @@ function HomeItems() {
             Redmi Xiaomi 80 cm (32 inches) F Series HD Ready Smart LED Fire TV L32MA-FVIN (Black)
           </h3>
           <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
-            Great Summer Sale
+            Prime day sale
           </span>
           <div className="text-red-600 font-bold text-lg">
-            ₹10,999{" "}
+            ₹10,499{" "}
             <span className="line-through text-gray-500 text-sm">₹24,999</span>
           </div>
           <a
@@ -71,7 +71,7 @@ function HomeItems() {
         {/* Appliance Card 3 */}
         <div className="border rounded-lg p-4 shadow-md relative">
           <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
-            -61%
+            62%
           </span>
           <img
             src="/images/vmsmarttv.png"
@@ -85,7 +85,7 @@ function HomeItems() {
             Great Summer Sale
           </span>
           <div className="text-red-600 font-bold text-lg">
-            ₹19,499{" "}
+            ₹18,999{" "}
             <span className="line-through text-gray-500 text-sm">₹49,999</span>
           </div>
           <a

@@ -15,10 +15,10 @@ function Laptops() {
             className="w-full h-48 object-cover mb-2"
           />
           <h3 className="font-semibold text-lg">HP 15, 13th Gen Intel Core i5-1334U (16GB DDR4, 512GB SSD) Microsoft365* Office2024, Win11, 15.6inch(39.6cm) FHD Laptop, Intel Iris Xe, FHD Camera w/Privacy Shutter, Backlit, Silver, 1.59kg, fd0467tu</h3>
-          <p className="text-red-600 font-bold text-xl mt-1">₹55,990</p>
+          <p className="text-red-600 font-bold text-xl mt-1">₹53,990</p>
           <p className="text-gray-500 line-through text-sm">₹65,387</p>
-          <span className="inline-block bg-red-500 text-white text-xs px-2 py-1 rounded-full mt-1">-14%</span>
-          <span className="inline-block bg-red-500 text-white text-xs px-2 py-1 rounded-full mt-1">Great Summer Sale</span>
+          <span className="inline-block bg-red-500 text-white text-xs px-2 py-1 rounded-full mt-1">-17%</span>
+          <span className="inline-block bg-red-500 text-white text-xs px-2 py-1 rounded-full mt-1">Prime Day Sale</span>
           <a
             href="https://amzn.to/4iGupi0"
             target="_blank"

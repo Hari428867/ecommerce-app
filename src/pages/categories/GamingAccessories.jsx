@@ -72,7 +72,8 @@ function GamingAccessories() {
         <div className="border rounded-lg p-4 shadow-md relative">
           /*<span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
             -82%
-          </span>*/
+          </span>
+          */
           <img
             src="/images/zebronicslaptopcooler.png"
             alt="Laptop cooling pad"
@@ -87,7 +88,8 @@ function GamingAccessories() {
           /*<div className="text-red-600 font-bold text-lg">
             ₹399{" "}
             <span className="line-through text-gray-500 text-sm">₹2,179</span>
-          </div>*/
+          </div>
+          */
           <a
             href="https://amzn.to/4d0k3IA"
             target="_blank"

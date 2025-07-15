@@ -82,7 +82,7 @@ function HomeItems() {
             VW 109 cm (43 inches) Pro Series 4K Ultra HD Smart QLED Google TV VW43GQ1 (Black)
           </h3>
           <span className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-sm rounded">
-            Great Summer Sale
+            Prime day Sale
           </span>
           <div className="text-red-600 font-bold text-lg">
             ₹18,999{" "}

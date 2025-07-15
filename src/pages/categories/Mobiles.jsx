@@ -10,7 +10,7 @@ function Mobiles() {
         <div className="relative p-4 border rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
           {/* Discount Badge */}
           <div className="absolute top-2 left-2 bg-red-600 text-white text-sm font-bold rounded-full px-3 py-1 shadow-md">
-            -37%
+            -39%
           </div>
 
           <img
@@ -24,7 +24,7 @@ function Mobiles() {
           
           {/* Price Styled */}
           <div className="mt-2 space-x-2">
-            <span className="text-red-600 font-bold text-xl">₹11,999</span>
+            <span className="text-red-600 font-bold text-xl">₹11,499</span>
             <span className="text-gray-500 line-through text-lg">₹18,999</span>
           </div>
 
@@ -43,7 +43,7 @@ function Mobiles() {
         <div className="relative p-4 border rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
           {/* Discount Badge */}
           <div className="absolute top-2 left-2 bg-red-600 text-white text-sm font-bold rounded-full px-3 py-1 shadow-md">
-            -31%
+            -29%
           </div>
 
           <img
@@ -52,13 +52,13 @@ function Mobiles() {
             className="w-60 h-80 object-cover mx-auto"
           />
           <h3 className="mt-2 font-semibold text-lg">
-            Samsung Galaxy M35 5G (Thunder Grey,6GB RAM,128GB Storage) | Corning Gorilla Glass Victus+ | AnTuTu Score 595K+ | Vapour Cooling Chamber | 6000mAh Battery | 120Hz Super AMOLED Display
+            Samsung Galaxy M35 5G (Thunder Grey,8GB RAM,128GB Storage) | Corning Gorilla Glass Victus+ | AnTuTu Score 595K+ | Vapour Cooling Chamber | 6000mAh Battery | 120Hz Super AMOLED Display
           </h3>
           
           {/* Price Styled */}
           <div className="mt-2 space-x-2">
-            <span className="text-red-600 font-bold text-xl">₹16,998</span>
-            <span className="text-gray-500 line-through text-lg">₹24,499</span>
+            <span className="text-red-600 font-bold text-xl">₹18,498</span>
+            <span className="text-gray-500 line-through text-lg">₹25,999</span>
           </div>
 
           {/* Button Styled */}
